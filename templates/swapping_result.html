@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIR Lab GenAI SIG Face Swapper</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Face swap successful!</h1>
+        <img src="/static/codeformer_output/result_{{ '%02d' | format(id) }}.png" id="result" alt="Result">
+        <div class="icon-container">
+            <img src="/static/icons/download.png" class="icon" id="download" alt="Download" onclick="downloadPhoto()">
+            <img src="/static/icons/print.png" class="icon" alt="Print" onclick="printPhoto()">
+            <img src="/static/icons/finish.png" class="icon" alt="Finish" onclick="backToIndex()">
+        </div>
+    </div>
+    <script src="static/button_script.js"></script>
+</body>
+</html>

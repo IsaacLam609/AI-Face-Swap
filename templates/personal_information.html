@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIR Lab GenAI SIG Face Swapper</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Personal Information Collection Statement<br/>收集個人資料聲明</h1>
+        <p>We value your privacy and are committed to handling your personal information in accordance with the Personal Data (Privacy) Ordinance of Hong Kong. When using AIR Lab GenAI SIG Face Swapper, our data processing procedures are as follows:<br/><br/>
+        Purpose of Data Collection: The personal photos and facial information you provide will only be used to generate AI face-swapped images and will not be used for any other purposes.<br/>
+        Data Processing and Use: All data processing is conducted locally on this device, ensuring that your data is not uploaded to the internet during the process.<br/>
+        Data Transfer: When you choose to download the generated images, they will be uploaded to our private Imgur album. The uploaded images are only used to provide the download service and will not be displayed to any third party.<br/>
+        Data Retention and Destruction: All images stored locally and those uploaded to the Imgur album will be automatically destroyed within one week after the event ends.<br/><br/>
+        我們重視您的隱私，並承諾按照香港《個人資料（私隱）條例》的要求，妥善處理您的個人資料。在使用AIR Lab GenAI SIG Face Swapper時，我們的資料處理過程如下：<br/><br/>
+        收集資料的目的：您提供的個人照片和人臉資訊將僅用於生成AI換臉圖片，不會用於其他用途。<br/>
+        資料處理與使用：所有的資料處理均在本設備上本地進行，確保您的資料不會在過程中被上傳至網絡。<br/>
+        資料的轉移：在您選擇下載生成的圖片時，該圖片將被上傳至我們的私人Imgur相簿。上傳的圖片僅用於提供下載服務，不會向任何第三方展示。<br/>
+        資料保留與銷毀：所有在本地保存的圖片以及上傳至Imgur相簿的圖片，將在活動結束後的一星期內自動銷毀。</p>
+        <div style="margin: 16px; text-align: center;">
+            <input type="checkbox" id="agreement" onclick="checkAgree()">
+            <label for="agreement">I agree 我同意</label>
+        </div>
+        <div class="icon-container">
+            <img src="/static/icons/back.png" class="icon" alt="Back" onclick="backToIndex()">
+            <img src="/static/icons/next.png" class="disabled-icon" id="next" alt="Next" onclick="selectPhoto()">
+        </div>
+    </div>
+    <script src="static/button_script.js"></script>
+</body>
+</html>

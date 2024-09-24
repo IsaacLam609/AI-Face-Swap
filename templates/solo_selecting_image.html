@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIR Lab GenAI SIG Face Swapper</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Select an image as the template</h1>
+        <div class="image-grid">
+            {% for image in images %}
+                <img src="{{ url_for('static', filename='images/' + image) }}" 
+                     class="image-container" 
+                     id="static/images/{{ image }}" 
+                     alt="{{ image }}">
+            {% endfor %}
+        </div>
+        <div class="icon-container">
+            <img src="/static/icons/back.png" class="icon" alt="Back" onclick="backToIndex()">
+            <img src="/static/icons/next.png" class="disabled-icon" id="next" alt="Next" onclick="finishSelect()">
+        </div>
+    </div>
+    <script src="/static/button_script.js"></script>
+</body>
+</html>
